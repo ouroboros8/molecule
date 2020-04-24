@@ -114,7 +114,7 @@ base_schema = {
             "options": {"type": "dict"},
             "env": {
                 "type": "dict",
-                "keysrules": {"type": "string", "regex": "^[A-Z0-9_-]+$"},
+                "keysrules": {"type": "string", "regex": "^[a-zA-Z0-9._-]+$"},
             },
             "command": {"type": "string", "nullable": True},
         },
@@ -171,7 +171,7 @@ base_schema = {
             "options": {"type": "dict"},
             "env": {
                 "type": "dict",
-                "keysrules": {"type": "string", "regex": "^[A-Z0-9_-]+$"},
+                "keysrules": {"type": "string", "regex": "^[a-zA-Z0-9._-]+$"},
                 "valuesrules": {"nullable": False},
                 "schema": {
                     "ANSIBLE_BECOME": {"type": "string", "disallowed": True},
@@ -221,7 +221,7 @@ base_schema = {
             "options": {"type": "dict"},
             "env": {
                 "type": "dict",
-                "keysrules": {"type": "string", "regex": "^[A-Z0-9_-]+$"},
+                "keysrules": {"type": "string", "regex": "^[a-zA-Z0-9._-]+$"},
             },
             "directory": {"type": "string"},
             "additional_files_or_dirs": {"type": "list", "schema": {"type": "string"}},
