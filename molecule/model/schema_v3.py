@@ -222,7 +222,7 @@ base_schema = {
             "options": {"type": "dict"},
             "env": {
                 "type": "dict",
-                "keysrules": {"type": "string", "regex": "^[A-Z0-9_-]+$"},
+                "keysrules": {"type": "string", "regex": "^[a-zA-Z0-9._-]+$"},
             },
             "directory": {"type": "string"},
             "additional_files_or_dirs": {"type": "list", "schema": {"type": "string"}},
